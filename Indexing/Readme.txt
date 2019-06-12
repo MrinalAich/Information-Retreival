@@ -1,12 +1,8 @@
 Following packages are needed to run the program:
-1. BeautifulSoup 
-Terminal command: sudo pip install bs4
-2. Matplotlib
-Terminal command: sudo pip install matplotlib
-3. NLTK
-Terminal command: sudo pip install nltk
-4. Numpy
-Terminal command: sudo pip install numpy
+1. BeautifulSoup : sudo pip install bs4
+2. Matplotlib    : sudo pip install matplotlib
+3. NLTK          : sudo pip install nltk
+4. Numpy         : sudo pip install numpy
 
 * In case pip is not already installed in the system, run this command to install pip first:
 sudo easy_install pip.
@@ -14,6 +10,7 @@ sudo easy_install pip.
 * All the thousands text files generated in the previous assignment are saved under crawlDir directory. 
 
 To execute the program:
+----------------------
 Terminal command: python indexing.py
 
 NOTE:
