@@ -72,10 +72,10 @@ Flow of main function () : A data structure default dictionary with list as the 
 
 Conclusion drawn from the graphs :
 -----------------------------------
-From graph 1 :
+From graph logRankCollectionFreq.png :
 With increase in rank, the collection frequency is decreasing exponentially as more the collection frequency of the term, higher is the rank in our model. The graph is linear because it has been plotted between log(rank) and log(collection frequency). The graph obtained is similar to results obtained by zipf’s law i.e. collection frequency is inversely proportional to rank of the term.
 
-From graph 2 :
+From graph logTokenVacabulary.png :
 Initially, the value of the number of terms in vocabulary is increasing with the increase in the collection size as new words are added in the vocabulary in the initial stages.
 After a certain point it is getting parallel to the axis for collection size as the tokens encountered are already present in the vocabulary.
 The graph is similar to that of y=root(x) which resides with the result of Heap’s law that is vocabulary size=k*(collection size)^b , where k is between 30 to 100 and b is approximately 0.5 .
