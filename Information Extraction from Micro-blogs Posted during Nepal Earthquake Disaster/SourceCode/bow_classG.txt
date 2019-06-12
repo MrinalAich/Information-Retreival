@@ -1,0 +1,20 @@
+bridge
+bridges
+broken
+dam
+damaged
+destroyed hospital
+electricity
+grids
+housing
+hydropower
+mandir
+parishad
+reconstruction
+restore
+restored
+roads
+stadium
+stations
+telecom
+temples
