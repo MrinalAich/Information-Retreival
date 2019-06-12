@@ -1,3 +1,48 @@
+Problem Statement :
+-------------------
+In this assignment, you need to build Inverted Index for the corpus that you have created in Assignment 1. Consider only unigrams as terms. Store the inverted index in a text file. Each line of the file should be of the following format:
+            <term>, docid1, docid2, ….
+Here, docids are the docids that you have assigned to different files while creating the corpus. The docid is already present in the file (obtained after crawling).
+
+Section - I
+For Index creation, consider the title, meta keywords and content of the crawled file. Use the following steps to create inverted index:
+	•	Step1: Treat url, email, date as individual tokens. Use Regular expression matching to detect such tokens. Build Inverted Index I1.
+	•	Step2: Remove stopwords. Use the list of stopwords provided at http://www.lextek.com/manuals/onix/stopwords1.html. Ensure each token to be of length at least 2. Also, each term should have at least one character (a-z or A-Z). Build Inverted Index I2.
+	•	Step3: Perform Stemming and build Inverted Index I3.
+	•	Step4: Remove the least frequent terms (the terms which are occurring in < 2% of    documents). Build Inverted Index I4.
+For each version of the index I1 through I4, compute the following
+	•	Number of Terms
+	•	Maximum Length of Postings List
+	•	Minimum Length of Postings List
+	•	Average Length of Postings List
+	•	Size of the file that stores the inverted index
+  
+Section - II
+After completing all the above steps (from step1 to step4), compute the following
+1)      Most frequent K words  (Here frequent in terms of document frequency) , say K=20
+2)      Postings List size for each of the above K words
+3)      For each of these words , find  average gap between documents in the Postings List
+Repeat the above 3 steps for median K words, and least frequent K words.
+
+Section – III 
+a)      Consider the top 1000 terms with highest frequency in the collection. Plot a graph with the following information:
+i)        X axis contains the log of the rank of the term in non-increasing collection frequency ordering. I.e., for the most frequent term, the x-axis value will be, for the 2nd most frequent term, the x-axis value will be, for the  most frequent term, the x-axis value will be  etc.
+ii)      Y axis contains the log of collection frequency of the term.
+b)      What are your observations from the graph?
+
+Section – IV
+a)      Consider the program that creates the index I4. As the indexer processes each file, maintain a record of the number of tokens already found from the collection, and the number of terms present in the vocabulary. Plot a graph with the following information:
+i)        X axis contains the log of the number of tokens already seen.
+ii)      Y axis contains the log of the vocabulary size.
+After finishing indexing of a file, get the value as described above, and add to the graph.
+b)      What are your observations from the graph?
+NOTE: Submit your code, a report and a README file that explains the steps required to execute your code. In the report, mention your group members' names. The report must be in pdf format.
+
+
+
+
+Packages Required :
+--------------------
 Following packages are needed to run the program:
 1. BeautifulSoup : sudo pip install bs4
 2. Matplotlib    : sudo pip install matplotlib
